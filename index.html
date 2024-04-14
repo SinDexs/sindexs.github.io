@@ -152,13 +152,26 @@
             <div class="container"><!--container is  -_ -->
                 <div class="row">
                     <div class="section-title padd-15">
-                      <widgetbot
-                        server="1189021097539162283"
-                        channel="1201275481895477258"
-                        width="1150"
-                        height="600"
-                      ></widgetbot>
-                      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+                        <style>
+                            #widgetbot-container {
+                                position: absolute; /* or 'relative' if you want to position it relative to its normal flow */
+                                left: 0px; /* adjust this value to move it left or right */
+                                /* Alternatively, you can use 'right' property instead of 'left' */
+                                /* right: 50px; */
+                                /* Adjust the top or bottom position if needed */
+                                top: 0px; /* adjust this value to move it up or down */
+                            }
+                        </style>
+                        
+                        <widgetbot
+                            server="1189021097539162283"
+                            channel="1201275481895477258"
+                            width="1150"
+                            height="600"
+                            id="widgetbot-container"
+                        ></widgetbot>
+                        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+                        
 
                             </div>
                         </div>
